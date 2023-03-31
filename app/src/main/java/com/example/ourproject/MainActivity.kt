@@ -1,5 +1,6 @@
 package com.example.ourproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -15,7 +16,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var textView = findViewById<TextView>(R.id.view)
         var button = findViewById<Button>(R.id.button)
-
+        button.setOnClickListener {
+            var intent = Intent(this, Uroven_1::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
