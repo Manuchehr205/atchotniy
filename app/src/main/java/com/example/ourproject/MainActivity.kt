@@ -3,6 +3,7 @@ package com.example.ourproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.music ->{
-                var
+                //var resId = resources.getIdentifier(R.raw.muzon.toString())
             }
         }
         return super.onOptionsItemSelected(item)
