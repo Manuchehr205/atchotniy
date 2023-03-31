@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(this, Uroven_1::class.java)
             startActivity(intent)
         }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -29,7 +30,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-
+            R.id.music ->{
+                var
+            }
         }
         return super.onOptionsItemSelected(item)
     }
