@@ -3,7 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/math"
     android:layout_height="match_parent"
     tools:context=".Uroven_1">
+
+    <TextView
+        android:id="@+id/zadacha1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="326 x 3 = ?"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#00CED1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
