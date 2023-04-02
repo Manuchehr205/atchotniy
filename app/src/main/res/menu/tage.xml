@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:title="Music"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/baseline_music_note_24"
-        android:id="@+id/music"
-        />
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Music_1"
+            android:id="@+id/music_1"
+            />
+        <item
+            android:title="Music_2"
+            android:id="@+id/music_2"
+            />
+        <item
+            android:title="Music_3"
+            android:id="@+id/music_3"
+            />
+    </group>
 
 
 </menu>

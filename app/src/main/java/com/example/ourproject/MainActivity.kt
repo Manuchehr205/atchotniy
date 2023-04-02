@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -32,9 +33,19 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.music ->{
+            R.id.music_1 ->{
                 var resId = resources.getIdentifier(R.raw.muzon.toString(), "raw", this.packageName)
-                val mediaPlayer = MediaPlayer.create(this, resId)
+                var mediaPlayer = MediaPlayer.create(this, resId)
+                mediaPlayer.start()
+            }
+            R.id.music_2 ->{
+                var resId = resources.getIdentifier(R.raw.muzon_2.toString(), "raw", this.packageName)
+                var mediaPlayer = MediaPlayer.create(this, resId)
+                mediaPlayer.start()
+            }
+            R.id.music_3 ->{
+                var resId = resources.getIdentifier(R.raw.muzon_3.toString(), "raw", this.packageName)
+                var mediaPlayer = MediaPlayer.create(this, resId)
                 mediaPlayer.start()
             }
         }
