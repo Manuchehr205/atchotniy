@@ -1,6 +1,7 @@
 package com.example.ourproject
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
@@ -32,7 +33,9 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.music ->{
-                //var resId = resources.getIdentifier(R.raw.muzon.toString())
+                var resId = resources.getIdentifier(R.raw.muzon.toString(), "raw", this.packageName)
+                val mediaPlayer = MediaPlayer.create(this, resId)
+                mediaPlayer.start()
             }
         }
         return super.onOptionsItemSelected(item)
