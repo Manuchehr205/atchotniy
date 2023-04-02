@@ -12,7 +12,7 @@ abstract class DataRoomBase : androidx.room.RoomDatabase(){
         companion object{
             @Volatile
             private  var INSTANCE: DataRoomBase? = null
-            fun getInstance(context: Context) {
+            fun getInstance(context: Context):DataRoomBase {
                 synchronized(this){
                     var instance = INSTANCE
                     if (instance == null){
@@ -23,7 +23,9 @@ abstract class DataRoomBase : androidx.room.RoomDatabase(){
                     ).build()
                     INSTANCE = instance
                 }
+                    return instance
                 }
+
             }
         }
 
