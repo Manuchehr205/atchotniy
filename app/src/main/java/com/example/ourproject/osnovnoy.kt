@@ -5,25 +5,21 @@ import android.content.res.AssetFileDescriptor
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView.ItemView
-import androidx.core.content.ContentProviderCompat.requireContext
 
-class MainActivity : AppCompatActivity() {
+class osnovnoy : AppCompatActivity() {
     var mediaPlayer : MediaPlayer?=MediaPlayer()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.osnovnoy)
         var textView = findViewById<TextView>(R.id.view)
         var button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
-            var intent = Intent(this, Uroven_1::class.java)
+            var intent = Intent(this, urovni_3::class.java)
             startActivity(intent)
         }
 
