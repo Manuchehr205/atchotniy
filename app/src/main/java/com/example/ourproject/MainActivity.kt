@@ -1,18 +1,22 @@
 package com.example.ourproject
 
 import android.content.Intent
+import android.content.res.AssetFileDescriptor
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView.ItemView
+import androidx.core.content.ContentProviderCompat.requireContext
 
 class MainActivity : AppCompatActivity() {
+    var mediaPlayer : MediaPlayer?=MediaPlayer()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,21 +38,38 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.music_1 ->{
-                var resId = resources.getIdentifier(R.raw.muzon.toString(), "raw", this.packageName)
-                var mediaPlayer = MediaPlayer.create(this, resId)
-                mediaPlayer.start()
+                audioPlayer("")
+                audioPlayer("muzon.mp3")
             }
             R.id.music_2 ->{
-                var resId = resources.getIdentifier(R.raw.muzon_2.toString(), "raw", this.packageName)
-                var mediaPlayer = MediaPlayer.create(this, resId)
-                mediaPlayer.start()
+                audioPlayer("")
+                audioPlayer("muzon_2.mp3")
             }
             R.id.music_3 ->{
-                var resId = resources.getIdentifier(R.raw.muzon_3.toString(), "raw", this.packageName)
-                var mediaPlayer = MediaPlayer.create(this, resId)
-                mediaPlayer.start()
+                audioPlayer("")
+                audioPlayer("muzon_3.mp3")
             }
         }
         return super.onOptionsItemSelected(item)
     }
+    private fun audioPlayer(fullPath: String) {
+        try {
+            if (mediaPlayer != null) {
+                mediaPlayer?.stop()
+                mediaPlayer?.release()
+                mediaPlayer = null
+            }
+            mediaPlayer = MediaPlayer()
+            val decs: AssetFileDescriptor = this.resources.assets.openFd(fullPath)
+            mediaPlayer?.setDataSource(decs.fileDescriptor, decs.startOffset, decs.length)
+            decs.close()
+            mediaPlayer?.prepare()
+            mediaPlayer?.setVolume(1f, 1f)
+            mediaPlayer?.isLooping = false
+            mediaPlayer?.start()
+        } catch (ex: Exception) {
+            Log.i("", ex.message!!)
+        }
+    }
+
 }

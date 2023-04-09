@@ -1,6 +1,7 @@
 package com.example.ourproject.room
 
 import androidx.room.Dao
+import androidx.room.Insert
 import androidx.room.Query
 import com.example.ourproject.room.RoomEntity
 
@@ -10,4 +11,9 @@ interface RoomDao {
     suspend fun getAll(): List<RoomEntity>
     @Query("SELECT * FROM user WHERE uid IN (:userIds)")
     suspend fun loadAllByIds(userIds : IntArray)
+
+    @Insert
+    fun insertAll( users: RoomEntity)
+
+
 }
