@@ -1,13 +1,12 @@
 package com.example.ourproject
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Uroven_1 : AppCompatActivity() {
+class urovni_3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_uroven1)
+        setContentView(R.layout.urovni_3)
     }
 
 }

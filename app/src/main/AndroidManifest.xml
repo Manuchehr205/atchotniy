@@ -12,13 +12,13 @@
         android:theme="@style/Theme.OurProject"
         tools:targetApi="31">
         <activity
-            android:name=".uroven_2"
+            android:name=".legkiy_1"
             android:exported="false" />
         <activity
-            android:name=".Uroven_1"
+            android:name=".urovni_3"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".osnovnoy"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
