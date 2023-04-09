@@ -6,16 +6,19 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.view.menu.MenuView.ItemView
+import android.provider.MediaStore as MediaStore1
 
-class osnovnoy : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.osnovnoy)
+        setContentView(R.layout.activity_main)
         var textView = findViewById<TextView>(R.id.view)
         var button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
-            var intent = Intent(this, urovni_3::class.java)
+            var intent = Intent(this, Uroven_1::class.java)
             startActivity(intent)
         }
 
