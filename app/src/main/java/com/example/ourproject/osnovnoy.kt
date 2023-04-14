@@ -35,7 +35,8 @@ class osnovnoy : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.info ->{
-
+                var intent = Intent(this, InfoActivity::class.java)
+                startActivity(intent)
             }
             R.id.music_1 ->{
                 audioPlayer("")
