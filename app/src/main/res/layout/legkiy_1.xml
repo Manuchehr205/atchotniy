@@ -16,10 +16,34 @@
         android:textSize="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/fifty_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="55"
+
+        />
+    <Button
+        android:id="@+id/twenty_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28"
+        />
+    <Button
+        android:id="@+id/thirty_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="34"
+        />
+    <Button
+        android:id="@+id/fourty_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="41"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
