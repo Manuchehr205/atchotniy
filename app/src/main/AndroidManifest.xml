@@ -12,6 +12,18 @@
         android:theme="@style/Theme.OurProject"
         tools:targetApi="31">
         <activity
+            android:name=".ekspert_2"
+            android:exported="false" />
+        <activity
+            android:name=".ekspert_1"
+            android:exported="false" />
+        <activity
+            android:name=".sredniy_2"
+            android:exported="false" />
+        <activity
+            android:name=".sredniy_1"
+            android:exported="false" />
+        <activity
             android:name=".legkiy_2"
             android:exported="false" />
         <activity
