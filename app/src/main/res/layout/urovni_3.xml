@@ -7,16 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".urovni_3">
 
-    <TextView
-        android:id="@+id/zadacha1"
+    <Button
+        android:id="@+id/legkiy"
+        android:text="Лёгкий уровень"
+        android:textSize="25dp"
+        android:backgroundTint="#FF8C00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="326 x 3 = ?"
-        android:textSize="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/sredniy"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:id="@+id/sredniy"
+        android:text="Средний уровень"
+        android:textSize="25dp"
+        android:backgroundTint="#FF8C00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ekspert"
+        app:layout_constraintTop_toBottomOf="@id/legkiy"/>
+
+    <Button
+        android:id="@+id/ekspert"
+        android:text="Сложный уровень"
+        android:textSize="25dp"
+        android:backgroundTint="#FF8C00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:textColor="#00CED1"/>
+        app:layout_constraintTop_toBottomOf="@id/sredniy"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
