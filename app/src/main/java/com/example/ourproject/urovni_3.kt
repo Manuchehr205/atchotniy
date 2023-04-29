@@ -16,5 +16,13 @@ class urovni_3 : AppCompatActivity() {
             var intent = Intent(this, legkiy_1::class.java)
             startActivity(intent)
         }
+        sredniy.setOnClickListener {
+            var intent = Intent(this, sredniy_1::class.java)
+            startActivity(intent)
+        }
+        expert.setOnClickListener {
+            var intent = Intent(this, ekspert_1::class.java)
+            startActivity(intent)
+        }
     }
 }
