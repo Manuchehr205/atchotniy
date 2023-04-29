@@ -8,42 +8,62 @@
     tools:context=".legkiy_1">
 
     <TextView
-        android:id="@+id/first_primer"
+        android:id="@+id/primer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="11 + 23 = ?"
+        android:text="54 - 28 = ?"
         android:textColor="#00FFFF"
         android:textSize="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
-
     <Button
-        android:id="@+id/fifty_five"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="55"
-
-        />
+        android:id="@+id/one"
+        android:backgroundTint="#FF8C00"
+        android:text="54"
+        android:textColor="#00FFFF"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/primer"
+        app:layout_constraintEnd_toStartOf="@id/two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/twenty_eight"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="28"
-        />
+        android:id="@+id/two"
+        android:backgroundTint="#FF8C00"
+        android:text="26"
+        android:textColor="#00FFFF"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/primer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/thirty_four"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="34"
-        />
+        android:id="@+id/three"
+        android:backgroundTint="#FF8C00"
+        android:text="21"
+        android:textColor="#00FFFF"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/one"
+        app:layout_constraintEnd_toStartOf="@id/four"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/fourty_one"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="41"
-        />
-
-
+        android:id="@+id/four"
+        android:backgroundTint="#FF8C00"
+        android:text="10"
+        android:textColor="#00FFFF"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/three"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
