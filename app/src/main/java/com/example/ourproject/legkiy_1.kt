@@ -23,21 +23,20 @@ class legkiy_1 : AppCompatActivity() {
             if (one_text == otvet) {
                 var intent = Intent(this, legkiy_2::class.java)
                 startActivity(intent)
-                val toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
+                var toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
                 toast.show()
             } else {
-                val toast = Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
+                var toast = Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
                 toast.show()
             }
             two.setOnClickListener {
                 if (two_text == otvet) {
                     var intent = Intent(this, legkiy_2::class.java)
                     startActivity(intent)
-                    val toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
+                    var toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
                     toast.show()
                 } else {
-                    val toast =
-                        Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
+                    var toast = Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
                     toast.show()
                 }
             }
@@ -45,11 +44,10 @@ class legkiy_1 : AppCompatActivity() {
                 if (three_text == otvet) {
                     var intent = Intent(this, legkiy_2::class.java)
                     startActivity(intent)
-                    val toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
+                    var toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
                     toast.show()
                 } else {
-                    val toast =
-                        Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
+                    var toast = Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
                     toast.show()
                 }
             }
@@ -57,10 +55,10 @@ class legkiy_1 : AppCompatActivity() {
                 if (four_text == otvet) {
                     var intent = Intent(this, legkiy_2::class.java)
                     startActivity(intent)
-                    val toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
+                    var toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
                     toast.show()
                 } else {
-                    val toast =
+                    var toast =
                         Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
                     toast.show()
                 }
