@@ -25,26 +25,26 @@ class ekspert_2 : AppCompatActivity() {
         var four_text = four.text.toString()
         one.setOnClickListener {
             if (one_text == otvet) {
-                audioPlayer("muzon.mp3")
+                audioPlayer("pole_letter_correct.mp3")
                 var intent = Intent(this, urovni_3::class.java)
                 startActivity(intent)
                 var toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
                 toast.show()
             } else {
-                audioPlayer("muzon.mp3")
+                audioPlayer("false_sound.mp3")
                 var toast = Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
                 toast.show()
             }
         }
             two.setOnClickListener {
                 if (two_text == otvet) {
-                    audioPlayer("muzon.mp3")
+                    audioPlayer("pole_letter_correct.mp3")
                     var intent = Intent(this, urovni_3::class.java)
                     startActivity(intent)
                     var toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
                     toast.show()
                 } else {
-                    audioPlayer("muzon.mp3")
+                    audioPlayer("false_sound.mp3")
                     var toast =
                         Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
                     toast.show()
@@ -52,13 +52,13 @@ class ekspert_2 : AppCompatActivity() {
             }
             three.setOnClickListener {
                 if (three_text == otvet) {
-                    audioPlayer("muzon.mp3")
+                    audioPlayer("pole_letter_correct.mp3")
                     var intent = Intent(this, urovni_3::class.java)
                     startActivity(intent)
                     var toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
                     toast.show()
                 } else {
-                    audioPlayer("muzon.mp3")
+                    audioPlayer("false_sound.mp3")
                     var toast =
                         Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
                     toast.show()
@@ -66,13 +66,13 @@ class ekspert_2 : AppCompatActivity() {
             }
             four.setOnClickListener {
                 if (four_text == otvet) {
-                    audioPlayer("muzon.mp3")
+                    audioPlayer("pole_letter_correct.mp3")
                     var intent = Intent(this, urovni_3::class.java)
                     startActivity(intent)
                     var toast = Toast.makeText(applicationContext, "Правильно", Toast.LENGTH_SHORT)
                     toast.show()
                 } else {
-                    audioPlayer("muzon.mp3")
+                    audioPlayer("false_sound.mp3")
                     var toast =
                         Toast.makeText(applicationContext, "Неправильно", Toast.LENGTH_SHORT)
                     toast.show()
